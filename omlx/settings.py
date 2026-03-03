@@ -445,7 +445,7 @@ class UISettings:
         return {"language": self.language}
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "UISettings":
+    def from_dict(cls, data: dict[str, Any]) -> UISettings:
         """Create from dictionary."""
         return cls(language=data.get("language", "en"))
 
